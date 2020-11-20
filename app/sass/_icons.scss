@@ -1,0 +1,128 @@
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "fonts" !default;
+
+$icon-whatsapp: "\e90e";
+$icon-telegram: "\e90c";
+$icon-vk: "\e90d";
+$icon-webpack: "\e908";
+$icon-git: "\e909";
+$icon-github1: "\e90a";
+$icon-gulp: "\e90b";
+$icon-javascript: "\e907";
+$icon-html5: "\e900";
+$icon-react: "\e901";
+$icon-github: "\e902";
+$icon-telegram1: "\e903";
+$icon-code: "\e904";
+$icon-phone: "\e905";
+$icon-envelope-o: "\e906";
+$icon-earth: "\e9ca";
+
+
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp;     
+  }
+}
+.icon-telegram {
+  &:before {
+    content: $icon-telegram;     
+  }
+}
+.icon-vk {
+  &:before {
+    content: $icon-vk;     
+  }
+}
+.icon-webpack {
+  &:before {
+    content: $icon-webpack;     
+  }
+}
+.icon-git {
+  &:before {
+    content: $icon-git;     
+  }
+}
+.icon-github1 {
+  &:before {
+    content: $icon-github1; 
+  }
+}
+.icon-gulp {
+  &:before {
+    content: $icon-gulp;     
+  }
+}
+.icon-javascript {
+  &:before {
+    content: $icon-javascript;     
+  }
+}
+.icon-html5 {
+  &:before {
+    content: $icon-html5;     
+  }
+}
+.icon-react {
+  &:before {
+    content: $icon-react;     
+  }
+}
+.icon-github {
+  &:before {
+    content: $icon-github; 
+  }
+}
+.icon-telegram1 {
+  &:before {
+    content: $icon-telegram1; 
+  }
+}
+.icon-code {
+  &:before {
+    content: $icon-code; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-envelope-o {
+  &:before {
+    content: $icon-envelope-o; 
+  }
+}
+.icon-earth {
+  &:before {
+    content: $icon-earth; 
+  }
+}
+

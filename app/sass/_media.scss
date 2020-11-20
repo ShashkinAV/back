@@ -1,0 +1,78 @@
+//Media style
+
+@include media-breakpoint-down(sm) {
+	.inner {
+		width: 90%;
+		&__link {
+			font-size: 14px;
+		}
+	}
+	.inner-text h1 {
+		font-size: 16px;
+	}
+	.navbar {
+		&__title {
+			font-size: 30px;
+		}
+		&__link {
+			font-size: 20px;
+		}
+	}
+	.layout-back {
+		display: none
+	}
+	.about-img {
+		background-image: url(../images/dest/1.jpg);
+		height: 250px;
+	}
+	.about {
+		padding: 1em;
+	}
+	.order-xs-2 {
+		order: 2
+	}
+	
+	
+}
+@include media-breakpoint-up(md) {
+	.inner {
+		width: 90%;
+		&__link {
+			font-size: 20px;
+		}
+	}
+	.inner-text h1 {
+		font-size: 24px;
+	}
+	.layout-back {
+		display: none
+	}
+	.about {
+		padding: 5em;
+	}
+	.about-img {
+		background-image: url(../images/dest/1.jpg);
+		height: 250px;
+	}
+}
+@include media-breakpoint-up(lg) {
+	.inner {
+		width: 90%;
+		&__link {
+			font-size: 30px;
+		}
+	}
+	.about {
+		padding: 0;
+	}
+	.inner-text h1 {
+		font-size: 55px;
+	}
+	.layout-back {
+		display: block
+	}
+	.about-img {
+		background-image: url(../images/dest/me.jpg);
+		height: 600px;
+	}
+}

@@ -1,0 +1,243 @@
+@import config
+
+// CUSTOM USER STYLES & IMPORTS
+
+@import progressBar
+@import icons
+
+section, footer
+	padding: 7em 0
+a
+	color: $accent
+	display: block
+	transition: all 0.3s ease
+	&:hover
+		text-decoration: none
+		color: $accent	
+//Header
+.header
+	height: 100vh
+	width: 100%
+	padding-top: 7px
+.top-line
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 20px
+	position: absolute
+.logo, .hamburger
+	display: block
+.hamburger
+	transition: all 0.3s ease
+	z-index: 9
+	&:hover
+		transform: scale(1.1)
+		color: #fff
+.logo
+	width: 50px
+	height: 50px
+	&__img
+		width: 100%
+		border-radius: 50%
+		object-fit: scale-down
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	background-color: #fff
+	height: 2px
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+	background-color: #fff
+.inner
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	height: 100%
+	width: 50%
+	margin: 0 auto
+	&__link
+		font-weight: 500
+		font-size: 30px
+		margin-left: 30px
+		transition: all 0.3s ease
+		&:after
+			content: ""
+			margin: 0 auto
+			background-color: $accent
+			width: 0%
+			height: 2px
+			display: block
+			transition: all 0.3s ease
+		&:hover::after
+			width: 100%
+	&__buttons
+		display: flex
+		justify-content: center
+.inner-text
+	text-align: center
+	color: #fff
+	h1
+		font-size: 55px
+
+
+.overlay
+	height: 0%
+	width: 100%
+	position: fixed
+	z-index: 1
+	top: 0
+	left: 0
+	background-color: rgba(black, 0.9)
+	overflow: hidden
+	transition: 0.5s
+	display: flex
+	justify-content: center
+	align-items: center
+.navbar
+	widows: 50%
+	height: auto
+	&__list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		text-align: center
+		margin-top: 40px
+	&__link
+		font-size: 50px
+		transition: all 0.3s ease
+		display: block
+		&:hover
+			transform: rotate(10deg)
+
+	&__title
+		font-size: 60px
+		color: #ffffff
+.about
+	position: relative
+	z-index: 2
+	&__title
+		color: #ffffff
+		margin-bottom: 30px
+	&__text
+		font-size: 20px
+	&__contacts
+		color: #ffffff
+		font-size: 20px
+		font-weight: 500
+		word-wrap: normal
+.about-img
+	background-image: url(../images/dest/me.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	width: 100%
+	height: 650px
+	border-radius: 20px
+.social
+	display: flex
+	margin: 20px 0
+	&__link
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-left: 20px
+		background-color: rgba(255,255,255,.05)
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		&:hover
+			color: #fff
+		&:first-child
+			margin-left: 0
+	&__icon
+		font-size: 22px
+	
+.layout-back
+	font-size: 200px
+	font-weight: bold
+	text-transform: uppercase
+	position: absolute
+	z-index: 1
+	color:	rgba(255,255,255,.08)
+	top: -190px
+	left: -60px
+.sec-header
+	margin-bottom: 100px
+	&__title
+		text-align: center
+		color: #ffffff
+		font-size: 40px
+		font-weight: 700
+	&__subtitle
+		text-transform: uppercase
+		text-align: center
+		margin: 0
+		letter-spacing: 5px
+		font-weight: 500
+.card
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	max-width: 250px
+	margin: 0 auto
+	&__icon
+		margin-bottom: 16px
+		i
+			font-size: 50px
+			color: $accent
+	&__body
+		text-align: center
+		color: #fff
+		font-size: 22px
+		font-weight: 400
+.project
+	padding: 100px 73px
+	&__title
+		p
+			text-transform: uppercase
+			letter-spacing: 4px
+			font-weight: 500
+			margin: 0
+		h3
+			color: #ffffff
+			font-size: 30px
+.project-picture
+	width: 90%
+	margin: 0 auto
+	img
+		width: 100%
+.contacts
+	display: flex
+	justify-content: center
+	align-items: center
+	&__us
+		text-align: center
+		color: white
+		font-size: 32px
+	&__email
+		text-align: center
+		color: #ffffff
+		font-size: 28px
+	&__copy
+		text-align: center
+		margin-top: 20px
+#is-about
+	.header
+		height: auto
+		padding-bottom: 150px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import media
