@@ -38,5 +38,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }); //AOS Animation
 
-  AOS.init();
+  AOS.init(); //progress
 });

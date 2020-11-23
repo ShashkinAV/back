@@ -38,7 +38,19 @@ document.addEventListener("DOMContentLoaded", () => {
 	})
 
 	//AOS Animation
-	
+
 	AOS.init();
+
+	//progress
+
+	
+
+	
+
+
+	
+	
+
+
 
 });

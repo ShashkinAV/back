@@ -11,7 +11,7 @@ let paths = {
 	plugins: {
 		src: [
 			'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
-			'node_modules/aos/dist/aos.js'
+			'node_modules/aos/dist/aos.js',
 		]
 	},
 

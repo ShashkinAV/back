@@ -226,6 +226,29 @@ a
 		height: auto
 		padding-bottom: 150px
 
+.progress
+	height: 3px
+	background-color: $accent
+	transition: width 0.5s ease
+	position: relative
+	&::after	
+		content: ""
+		display: block
+		background-color: $accent
+		width: 10px
+		height: 10px
+		position: absolute
+		right: -8px
+		bottom: -4px
+		border-radius: 50%
+.progressPercent
+	float: right
+	opacity: 0
+.progressBox
+	margin: 40px 0
+
+
+
 
 
 
