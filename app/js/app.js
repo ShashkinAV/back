@@ -11,46 +11,28 @@ document.addEventListener("DOMContentLoaded", () => {
       $(".KW_progressBar").css("width", totalScroll + "%");
     });
   };
-	pageProgress();
-	
-	const openMenu = document.querySelector('.hamburger');
-	const overlay = document.querySelector('.overlay');
-	const body = document.querySelector('#is-page');
+  pageProgress();
 
-	openMenu.addEventListener('click', (e)=> {
-		e.preventDefault();
+  //humburger
 
-		if(!openMenu.classList.contains("is-active")) {
-			openMenu.classList.add("is-active");
-			openMenu.style.position = "fixed";
-			openMenu.style.right = "0";
-			openMenu.style.paddingRight = "20px";
-			overlay.style.height = "100%";
-			body.style.overflow = "hidden";
-		} else {
-			openMenu.classList.remove("is-active");
-			overlay.style.height = "0%";
-			openMenu.style.position = "";
-			openMenu.style.right = "";
-			openMenu.style.paddingRight = "0";
-			body.style.overflow = "";
-		}
-	})
+  $(".hamburger").on("click", (e) => {
+    e.preventDefault();
+    $(".hamburger").toggleClass("is-active");
+    $(".overlay").toggleClass("overlay__on");
+    $("body").toggleClass("overflow-hidden");
+  });
 
-	//AOS Animation
+  //skillbars
+  $(".skillbar__bar").each(function () {
+    $(this).animate(
+      {
+        width: $(this).attr("data-width"),
+      },
+      2000
+    );
+    $(this).find(".skillbar__percent").text($(this).attr("data-width"));
+  });
 
-	AOS.init();
-
-	//progress
-
-	
-
-	
-
-
-	
-	
-
-
-
+  //AOS Animation
+  AOS.init();
 });

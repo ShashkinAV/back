@@ -14,29 +14,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 
-  pageProgress();
-  var openMenu = document.querySelector('.hamburger');
-  var overlay = document.querySelector('.overlay');
-  var body = document.querySelector('#is-page');
-  openMenu.addEventListener('click', function (e) {
-    e.preventDefault();
+  pageProgress(); //humburger
 
-    if (!openMenu.classList.contains("is-active")) {
-      openMenu.classList.add("is-active");
-      openMenu.style.position = "fixed";
-      openMenu.style.right = "0";
-      openMenu.style.paddingRight = "20px";
-      overlay.style.height = "100%";
-      body.style.overflow = "hidden";
-    } else {
-      openMenu.classList.remove("is-active");
-      overlay.style.height = "0%";
-      openMenu.style.position = "";
-      openMenu.style.right = "";
-      openMenu.style.paddingRight = "0";
-      body.style.overflow = "";
-    }
+  $(".hamburger").on("click", function (e) {
+    e.preventDefault();
+    $(".hamburger").toggleClass("is-active");
+    $(".overlay").toggleClass("overlay__on");
+    $("body").toggleClass("overflow-hidden");
+  }); //skillbars
+
+  $(".skillbar__bar").each(function () {
+    $(this).animate({
+      width: $(this).attr("data-width")
+    }, 2000);
+    $(this).find(".skillbar__percent").text($(this).attr("data-width"));
   }); //AOS Animation
 
-  AOS.init(); //progress
+  AOS.init();
 });
